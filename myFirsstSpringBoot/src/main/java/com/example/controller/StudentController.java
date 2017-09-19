@@ -34,6 +34,7 @@ public class StudentController {
 	public Student save(@Valid Student student,BindingResult bindingResult){
 		if(bindingResult.hasErrors()){
 			System.out.println(bindingResult.getFieldError().getDefaultMessage());
+			System.out.println("hello");
 			return null;
 		}
 		System.out.println();
